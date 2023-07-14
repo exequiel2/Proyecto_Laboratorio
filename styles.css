@@ -1,0 +1,328 @@
+.division {
+  border: #041637;
+  background-color: rgba(13, 14, 15, 0.791);
+  align-items: baseline;
+  flex-direction: column;
+  padding: 1px 25px 1px;
+  /*position: fixed;*/
+
+}
+
+@media only screen and (max-width:8000px) {
+
+  /* For tablets: */
+  .contenedor {
+    width: 50%;
+    padding: 0;
+  }
+ 
+  p {
+    width: 100%;
+  }
+
+  @media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    .division,
+    p {
+      width: 100%;
+    }
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .menu a:hover {
+    background: blue;
+
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .icono a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    display: inline-block;
+
+  }
+
+  .icono a:hover {
+    background: blue;
+  }
+
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+   translate: 1s;
+
+  }
+
+  .center-image:hover {
+    width: 300px;
+    height: 480px;
+    transform: translateX(-5%);
+    transform: translateY(5%);
+  }
+
+  .imagenes-mov {
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: 1s;
+    cursor: pointer;
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+
+
+
+  }
+
+  .imagenes-mov:hover {
+    
+    filter: brightness(auto);
+    width:auto;
+    cursor: pointer;
+    height: auto;
+    margin:auto;
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+
+
+  }
+
+/*
+  body {
+    background-color: #d2c5b3;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #d2c5b3 40px), repeating-linear-gradient(#f4850955, #f48509);
+
+  }
+*/
+  footer {
+    background-color: rgb(36, 35, 35);
+
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .footer_top {
+    background-color: #464646
+  }
+
+  * {
+    margin: 10px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+  p {
+    background-color: rgba(108, 154, 173, 0.185);
+    font-size: 140%;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
+
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 3px solid #000000;
+  }
+
+  h1 {
+    margin: auto;
+    font-size: 32px;
+    color: white;
+    line-height: 48px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #000000;
+    line-height: 48px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h3 {
+    font-size: 32px;
+    color: #000000;
+    line-height: 48px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h4 {
+    color: #029fff;
+    font-style: italic;
+    font-size: 140%
+  }
+
+  nav {
+    align-items: center;
+    flex-direction: column;
+    margin-right: 75px;
+    margin-left: 75px;
+    padding: 1px 125px 1px
+  }
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+  }
+
+  tr {
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  td {
+    border: 2px solid black;
+    padding: 10px;
+  }
+}
+
+
+
+/* animaciones */
+p{
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.center-image:hover {
+  animation: zoom 1s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item1 {
+  background: red;
+  text-align: center;
+  border: black 5px solid; 
+  width: 50px;
+  height: 50px;
+}
+.grid-item2 {
+  background: red;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item3 {
+  background: red;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item4 {
+  background: red;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item5 {
+  background: red;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item6 {
+  background: red;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item7 {
+  background: green;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item8 {
+  background: green;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+.grid-item9 {
+  background: green;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+
+.grid-item10 {
+  background: green;
+  text-align: center;
+  border: black 5px solid;
+  width: 50px;
+  height: 50px;
+}
+
+/* fondo de html */
+body {
+  background-color: #029fff;
+  background-image: url("imagenes/5559852.jpg");
+}
