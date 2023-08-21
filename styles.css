@@ -1,4 +1,93 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 @media only screen and (max-width:8000px) {
 
   /* For tablets: */
@@ -9,6 +98,8 @@
  
   p {
     width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
 
   @media only screen and (max-width:500px) {
@@ -56,16 +147,18 @@
 /*imagen con texto al lado*/
   .imagenes-texto{
     display: flex;
-   
-    
+   padding: 20px;
+    margin: 10px;
  
   }
  .imagenes-texto2{
    display: flex;
- 
+   padding: 30px;
+   margin: 10px;
+
  }
   .imagenes-mov1 {
-    margin-right: 20px;
+    margin-left: 20px;
     box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
     transform: 1s;
     cursor: pointer;
@@ -74,16 +167,16 @@
     box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
     transition: 3s;
   }
+  }
 
   .imagenes-mov1:hover {
-    
     filter: brightness(auto);
     width:auto;
     cursor: pointer;
     height: auto;
     margin:auto;
-    transform: scalex(115%)scaleY(115%)
 
+    transform: scalex(115%)scaleY(115%);
   }
   .imagenes-mov2 {
     margin-left: 20px;
@@ -132,12 +225,8 @@
 
   }
 
-.cuerpo1{
-  
-    margin: 10px;
-    padding: 10px
-  
-}
+
+
 .cuerpo2{
   
   margin: 10px;
@@ -189,6 +278,7 @@
   p {
     background-color: rgba(108, 154, 173, 0.185);
     font-size: 140%;
+    
     border-style: solid;
     border-width: 1px;
     -webkit-box-shadow: -1px -5px 41px 0px rgba(0, 0, 0, 0.75);
@@ -214,7 +304,7 @@
 
   h2 {
     font-size: 32px;
-    color: #000000;
+    color: #030303;
     line-height: 48px;
     text-align: center;
     font-family: Montserrat;
@@ -251,7 +341,7 @@
 nav ul li {
   display: inline;
   margin-right: 20px;
-  }
+}
 .autito{
  margin-right: 60px;
 }
@@ -273,7 +363,7 @@ nav ul li {
     border: 2px solid black;
     padding: 10px;
   }
-}
+
 
 
 
@@ -281,6 +371,7 @@ nav ul li {
 p{ 
   animation-duration: 0.5s;
    animation-name: slidein;
+
 }
 
 @keyframes slidein {
@@ -317,6 +408,7 @@ p{
   grid-gap: 5px;
   justify-items: center;
   align-items: center;
+  padding: 10px;
 }
 
 .grid-item1 {
@@ -392,12 +484,15 @@ p{
 }
 
 /* fondo de html */
-
-body, menu, div, nav{
+body{
   background-color: #029fff;
-  background-image: url("imagenes/5559852.jpg");
-}
+  background-image: url("imagenes/5026563.jpg");
 
+}
+.formulario{
+  background-image: url("imagenes/5026563.jpg");
+  padding: 10px;
+}
 
 
 
@@ -448,7 +543,6 @@ ul.slider li:target {
 .menu{
   text-align: center;
   margin: 20px;
-  
 }
 
 .menu li{
@@ -462,3 +556,5 @@ ul.slider li:target {
   padding: 8px;
   border-radius: 100%;
 }
+
+
